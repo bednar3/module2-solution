@@ -2,17 +2,114 @@
 *  Carol Bednar
 */
 
-
 body {
-/* make background violet */
-background-color:violet;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* Style with header*/
+.header {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+/* Style the top navigation bar */
+.topnav {
+    background-color: darkgreen;
+    overflow: hidden;
 }
 
-h1 {
-/* indent by 100 px */
-margin-left: 100px;
-/* make font-size 40pixels */
-font-size: 40px;
-/* make font cursive */
-font-family:cursive;
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 18px;
+    font-family: cursive;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: green;
+    color: black;
+    font-family: cursive;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    height: 210px;
+    margin-top: 50px;
+    overflow: inherit;
+    background-color: pink;
+    border: 5px solid black;
+    display:inline-block;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the title of each box */
+.title {
+
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+}
+
+#mutton:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 25px;
+}
+
+/*Responsive layout- Desktop Version*/
+@media (min-width:992px) {
+    .column {
+        float: left;
+        border: 5px solid black;
+        width: 33.33%
+        
+    }
+}
+
+/*Responsive layout- Tablet Version*/
+@media (min-width:768px) and (max-width:991px) {
+    #breakfast{
+        width: 50%;
+    }
+    #lunch{
+        width: 50%;
+    }
+    #dinner{
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - Mobile Version */
+@media (max-width:767px) {
+    #breakfast{
+        width: 100%;
+    }
+    #lunch{
+        width: 100%;
+    }
+    #dinner{
+        width: 100%;
+    }
 }
