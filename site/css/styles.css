@@ -1,0 +1,18 @@
+/** This is a comment that the browser will ignore,
+*  Carol Bednar
+*/
+
+
+body {
+/* make background violet */
+background:violet;
+}
+
+h1 {
+/* indent by 100 px */
+margin-left: 100px;
+/* make font-size 40pixels */
+font-size: 40px;
+/* make font cursive */
+font-family:cursive;
+}
