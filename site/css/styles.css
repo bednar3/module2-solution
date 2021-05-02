@@ -16,6 +16,29 @@ body {
     text-transform: capitalize;
     color: white;
 }
+/* Style the top navigation bar */
+.topnav {
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 18px;
+    font-family: cursive;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: green;
+    color: black;
+    font-family: cursive;
+}
 
 
 /* Create three equal columns that floats next to each other */
@@ -45,6 +68,13 @@ body {
     position: relative;
     left: 250px;
     bottom: 30px;
+}
+
+#mutton:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 25px;
 }
 
 /*Responsive layout- Desktop Version*/
