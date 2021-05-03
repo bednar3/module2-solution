@@ -1,21 +1,88 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+  <head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-<div id="box">
-         <h1 class="title">Breakfast</h1>
-                <div id="content"> Pancakes | French Toast | Denver Omelette | Oatmeal with Raisins.</div>
-</div>
-<div id="box">
-         <h1 class="title">Lunch</h1>
-                <div id="content"> Minestrone | Falafel Wrap | Grilled Cheese | BLT.</div>
-</div>
-<div id="box">
-         <h1 class="title">Dinner</h1>
-                <div id="content"> Filet Mignon | Lasagne | Fish and Chips | Salmon.</div>
+   <body>
+   	   <div class="header">
+          <h1>Our Menu</h1>
+       </div>
+       <div class="row">
+  <div class="column">
+    <h2>Breakfast</h2>
+    <p>Pancakes | French Toast | Denver Omelette | Oatmeal with Raisins.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Lunch</h2>
+    <p>Minestrone | BLT | Falafel Wrap | Cheeseburger.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Dinner</h2>
+    <p>Filet Mignon | Lasagne | Fish and Chips | Macaroni and Cheese | Mushroom Ravioli.</p>
+  </div>
 </div>
 
-</body>
+   </body>
 </html>
