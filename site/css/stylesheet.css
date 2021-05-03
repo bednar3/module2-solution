@@ -61,7 +61,7 @@ body {
     #dinner.column{
         width: 100%;
     }
-    background-color:pink
+    
 
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -69,4 +69,19 @@ body {
   .column {
     width: 100%;
   }
+}
+
+#breakfast{
+
+  background-color: blue;
+
+}
+
+#lunch{
+  background-color: yellow;
+
+}
+
+#dinner{
+  background-color:pink;
 }
